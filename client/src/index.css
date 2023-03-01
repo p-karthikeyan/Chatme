@@ -1,0 +1,316 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primary-btn{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(45deg,#fc4d99,#df355d);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+}
+.primary-btn:hover{
+    background: linear-gradient(225deg,#873102,#ff9c40);
+}
+.secondary-btn{
+    color: #1e9b39;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: white;
+    border: solid 2px rgb(6, 169, 6);
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin: 8px;
+}
+.secondary-btn:hover{
+    color: white;
+    background: linear-gradient(45deg,#fc4d99,#df355d);
+    border:none;
+    
+}
+h2{
+    font-family:fantasy;
+}
+.home{
+    align-items: center;
+}
+nav{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo-container{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    margin: 0px;
+}
+nav .whitelogo{
+    font-size: 40px;
+    color: white;
+}
+nav .blacklogo{
+    font-size: 40px;
+    color: black;
+}
+nav .logo-container .logo{
+    width:100%;
+    transform: scale(.4);
+}
+.nav-btn{
+    color: rgb(21, 165, 11);
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background:white;
+    padding: 12px 30px;
+    border: none;
+    margin: 20px;
+    border-radius: 15px;
+}
+.nav-btn:disabled{
+    background: rgb(228, 228, 228);
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: url('images/bg.jpg');    
+}
+.primary-title{
+    font-size: 90px;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom:0 ;
+}
+.sec-title{
+    font-size: 20px;
+    color: white;
+}
+.auth-model{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    max-width: 360px;
+    margin-top: 20px;
+    height: 60vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 40px;
+}
+.auth-model form{
+    display: flex;
+    flex-direction: column;
+}
+.auth-model input[type=email],
+.auth-model input[type=password]{
+    padding: 8px;
+    margin:8px;
+    font-size: 17px;
+}
+.close-btn{
+    float: right;
+}
+
+/* boarding page stylings */
+.onboarding{
+    border-top: solid 1px rgb(239, 14, 14);
+    background-color:rgba(245, 217, 217, 0.137);
+}
+.onboarding form{
+    display: flex;
+    justify-content: center;
+}
+.onboarding form label{
+    margin:10px 0px;
+    font-weight: bold;
+}
+.onboarding form section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    text-align: start;
+}
+.onboarding form .photo-container{
+    height: 100vh;
+    display: flex;
+}
+.onboarding form .photo-container img{
+    width: 100%;
+    height: 100%;
+    transform:scale(.8);
+    border-radius: 40px;
+}
+.onboarding form .dob-container{
+    display: flex;
+    flex-direction: row;
+}
+.onboarding form .dob-container input{
+    margin-right: 10px;
+}
+.onboarding form input[type="radio"]{
+    display: none;
+}
+.onboarding form input[type="checkbox"]{
+    margin-right: 10px;
+}
+.onboarding form input[type="number"]{
+    width: 10%;
+}
+.onboarding form input[type="radio"]:checked+label{
+    border: solid rgba(236, 67, 115, 0.767);
+}
+.onboarding form .dob-container label{
+    padding: 10px;
+    border: solid rgba(170, 166, 167, 0.767);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right: 10px;
+    font-weight: normal;
+}
+.onboarding form input::-webkit-inner-spin-button,
+.onboarding form input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.onboarding input{
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: solid 2px grey;
+    border-radius: 10px;
+}
+
+
+.swipe {
+    position: absolute;
+  }
+  .card {
+    position: relative;
+    background-color: #fff;
+    width: 80vw;
+    width: 350px;
+    height: 70vh;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: #fff;
+  }
+
+  .dashboard{
+    display: flex;
+    justify-content: space-between;
+  }
+  .swipe-info{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    padding: 10px;
+  }
+  .swipe-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .chat-container{
+    background-color: white;
+    box-shadow: rgb(144, 144, 144) 0px 0px 20px 0px;
+    width: 30%;
+    height: 100vh;
+    text-align: left;
+    z-index: 1;
+  }
+  .chat-container .chat-header{
+    background: linear-gradient(45deg,#fc4d99,#df355d);
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .chat-container .chat-header .profile-dp{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+  }
+  .chat-container .chat-header .img-container img{
+    width: 100%;
+  }
+  .chat-header .log-out-icon:hover{
+    color: white;
+  }
+  .chat-header .log-out-icon{
+    display: flex;
+    align-items: center;
+    color: rgb(250, 166, 166);
+    padding:10px ;
+  }
+  .chat-container .chat-header .img-container{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .Options{
+    padding-left: 20px;
+  }
+  .chat-container .option{
+    border: none;
+    background-color: white;
+    border-bottom: solid 4px rgba(255, 0, 64, 0.785);
+    font-size: 20px;
+    margin: 2px;
+    padding: 10px;
+  }
+  .chat-container .option:disabled{
+    border-bottom: solid 4px rgba(210, 209, 209, 0.913);   
+  }
+
+  /* -------------- */
+  .chat-display{
+    padding: 20px;
+    height: 55vh;
+    overflow-y: auto;
+  }
+  .text-msg{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  .chat-input{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+  }
